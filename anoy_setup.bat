@@ -49,7 +49,7 @@ ECHO arrMessages(8) = "System resources are critically low. Memory paging file h
 ECHO arrMessages(9) = "Digital Signature for the latest security update could not be verified. Your system is now running in 'Unsecured Mode'." >> "%TARGET_DIR%\%VBS_FILE%"
 ECHO arrMessages(10) = "Critical process 'WinLogon.exe' has failed. All user sessions must be terminated. (Click OK to continue the deception)." >> "%TARGET_DIR%\%VBS_FILE%"
 ECHO Message = arrMessages(Int(11 * Rnd)) >> "%TARGET_DIR%\%VBS_FILE%"
-ECHO x=MsgBox(Message, 16+0, "Critical System Error - [RANDOM CPU CODE]") >> "%TARGET_DIR%\%VBS_FILE%"
+ECHO x=MsgBox(Message, 16+0, "Critical System Error - !!") >> "%TARGET_DIR%\%VBS_FILE%"
 
 
 REM --- 2. Create Activation File (kaoson.bat) ---
